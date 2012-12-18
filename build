@@ -1,0 +1,38 @@
+#!/bin/sh
+
+# Build an archive from sources
+
+check_file_exist() {
+if ls $1 > /dev/null
+	then
+		echo "$1 already exist, do you want to remove it y/N ?"
+		read answer
+		case $answer in
+		y|Y ) rm -r $1 ;;
+		* ) echo "exit" ; exit 1 ;;
+		esac
+fi
+}
+
+# package.name
+pkgname='mini-1.0'
+
+check_file_exist $pkgname
+mkdir $pkgname
+
+while read path
+do
+cp -r $path $pkgname
+done < pkglist
+
+check_file_exist $HOME/Public/$pkgname.tar.gz
+tar cvfz $HOME/Public/$pkgname.tar.gz $pkgname 
+
+#Create a file (dirfile) containing a list of the directories you want to copy to, one per line
+#and then use a simple shell script to batch copy the file i.e.
+
+##! /bin/sh
+#while read DIR
+#do
+#cp file $DIR
+#done < dirlist
