@@ -1,12 +1,14 @@
-mini version 1.0
+mini-xfwm4-theme version 1.0
+----------------------------
 
 Author : Cédric Leporcq
-Date : december 10, 2012
-------------------------
+Released under the GPL license
+Date : december 18, 2012
+Sources : https://github.com/cedl38/mini-xfwm4-theme
 
 DESCRIPTION
 
-Very thin theme for xfce to keep space for windows.
+Very thin theme for Xfce to keep space for windows.
 
 Include :
 - light and dark version
@@ -15,6 +17,8 @@ Include :
 
 For install : extract the archive first and copy the folders to ~/.themes
 
+Arch users : "mini-xfwm4-theme" is available in AUR.
+
 LOG
 1.0 :
 -initial release 
@@ -22,11 +26,3 @@ generator script :
 - change header to make working in python2
 - possibility to have border smaller than width of rounded corners
 - script adapted to themes
-
-2.0 :
-- Theme ported to xfwm4 window manager.
-- some changes for prelight buttons.
-
-1.3.5 :
-- last metacity version
-more details here : [url]http://gnome-look.org/content/show.php/Natural-Adaptive-themes?content=149541"natural-adaptive-themes[/url]

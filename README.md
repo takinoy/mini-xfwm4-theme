@@ -1,12 +1,12 @@
-mini version 1.0
+mini-xfwm4-theme version 1.0
+----------------------------
 
 Author : Cédric Leporcq
-Date : december 10, 2012
-------------------------
+Released under the GPL license
+Date : december 18, 2012
+Sources : https://github.com/cedl38/mini-xfwm4-theme
 
-DESCRIPTION
-
-Very thin theme for xfce to keep space for windows.
+Very thin theme for Xfce to keep space for windows.
 
 Include :
 - light and dark version
@@ -14,6 +14,8 @@ Include :
 http://xfce-look.org/content/show.php/XFWM+-+Minimal-gtk?content=139915
 
 For install : extract the archive first and copy the folders to ~/.themes
+
+Arch users : "mini-xfwm4-theme" is available in AUR.
 
 LOG
 1.0 :
