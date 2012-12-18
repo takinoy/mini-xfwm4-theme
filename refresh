@@ -1,17 +1,8 @@
 #!/bin/sh
 
-#echo $alinearc | sed 's/ /\n/g'
-#echo ${alinearc// /\n}
-#sed 's/' '/\\n/' $alinearc
-
 # make xfwm4 themes
 cd ../../mini/xfwm4
 ./generator.py
 cd ../../mini-nigra/xfwm4
 ./generator.py
 cd ../..
-
-#file.tmp && mv -f file.tmp '$file'
-
-# create links
-#./link.sh
