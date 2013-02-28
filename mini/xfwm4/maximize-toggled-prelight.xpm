@@ -1,6 +1,6 @@
 /* XPM */
 static char * maximize_toggled_prelight = {
-"18 13 4 1", 
+"18 14 4 1", 
 "@	c #b1b1b1 s active_shadow_1", 
 "+	c #FFFFFF", 
 "=	c #000000 s active_color_1", 
@@ -18,4 +18,5 @@ static char * maximize_toggled_prelight = {
 "====@+@@@@@@+@====", 
 "====@++++++++@====", 
 "====@@@@@@@@@@====", 
+"==================", 
 };
