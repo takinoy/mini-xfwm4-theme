@@ -1,9 +1,9 @@
-mini-xfwm4-theme version 1.0
+mini-xfwm4-theme version 1.1
 ----------------------------
 
 Author : Cédric Leporcq
 Released under the GPL license
-Date : december 18, 2012
+Date : February 28, 2013
 Sources : https://github.com/cedl38/mini-xfwm4-theme
 
 DESCRIPTION
@@ -20,9 +20,13 @@ For install : extract the archive first and copy the folders to ~/.themes
 Arch users : "mini-xfwm4-theme" is available in AUR.
 
 LOG
-1.0 :
--initial release 
+
+1.1
+ - Slightly increase titlebar height of 1px to fix top sensitive border.
+ - Adjust titlebar corner rounding for mini-nigra.
+1.0
+ - Initial release. 
 generator script :
-- change header to make working in python2
-- possibility to have border smaller than width of rounded corners
-- script adapted to themes
+ - Change header to make working in python2.
+ - Possibility to have border smaller than width of rounded corners.
+ - Script adapted to themes.
