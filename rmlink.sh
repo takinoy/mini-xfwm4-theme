@@ -1,16 +1,15 @@
 #!/bin/sh
 
-# remove links
+# remove links from theme directory
 
-# package.name
+# package name
 pkgname=${PWD##*/}
 name=${pkgname%%-*}
 
 # directory
 theme_dir="$HOME/.themes"
-path=$(ls -1 | grep "$name")
+cd $theme_dir
+path=$(ls -1 | grep "^$name-.*dev")
 
 # rm link files to directory
-cd $theme_dir
-rm $path
-
+rm -v $path
