@@ -177,6 +177,7 @@ close_active = '''
 ====@+++@@+++@====
 ====@++@==@++@====
 =====@@====@@=====
+==================
 '''.strip()
 
 chars = ["+", "@", "#", "=", "-"]
@@ -227,6 +228,7 @@ hide_active = '''
 ===@++++++++++@===
 ===@++++++++++@===
 ===@@@@@@@@@@@@===
+==================
 '''.strip()
 hide_active_map = close_active_map
 hide_prelight = hide_active
@@ -265,6 +267,7 @@ maximize_active = '''
 ===@+@@@@@@@@+@===
 ===@++++++++++@===
 ===@@@@@@@@@@@@===
+==================
 '''.strip()
 maximize_active_map = close_active_map
 maximize_prelight = maximize_active
@@ -289,6 +292,7 @@ maximize_toggled_active = '''
 ====@+@@@@@@+@====
 ====@++++++++@====
 ====@@@@@@@@@@====
+==================
 '''.strip()
 maximize_toggled_active_map = close_active_map
 maximize_toggled_prelight = maximize_toggled_active
@@ -311,6 +315,7 @@ menu_active = '''
 ======@++++@======
 =======@++@=======
 ========@@========
+==================
 ==================
 ==================
 '''.strip()
@@ -337,6 +342,7 @@ shade_active = '''
 =======@++@=======
 =======@++@=======
 ========@@========
+==================
 '''.strip()
 shade_active_map = close_active_map
 shade_prelight = shade_active
@@ -361,6 +367,7 @@ shade_toggled_active = '''
 ======@++++@======
 =======@++@=======
 ========@@========
+==================
 '''.strip()
 shade_toggled_active_map = close_active_map
 shade_toggled_prelight = shade_toggled_active
@@ -385,6 +392,7 @@ stick_active = '''
 =====@++++++@=====
 ======@++++@======
 =======@@@@=======
+==================
 '''.strip()
 stick_active_map = close_active_map
 stick_prelight = stick_active
@@ -409,6 +417,7 @@ stick_toggled_active = '''
 =====@++++++@=====
 ======@++++@======
 =======@@@@=======
+==================
 '''.strip()
 stick_toggled_active_map = close_active_map
 stick_toggled_prelight = stick_toggled_active
@@ -421,6 +430,7 @@ stick_toggled_inactive_map = menu_inactive_map
 active = '''
 ..+++++++++++..
 .+%%%%%%%%%%%+.
++%%%%%%%%%%%%%+
 +%%%%%%%%%%%%%+
 +%%%%%%%%%%%%%+
 +%%%%%%%%%%%%%+
@@ -446,10 +456,11 @@ amap = {
     "." : "None",
 }
 inactive = '''
-....+++++++....
-..++%%%%%%%++..
-.+%%#######%%+.
-.+%#=======#%+.
+..+++++++++++..
+.+%%%%%%%%%%%+.
++%###########%+
++%#=========#%+
++%#=========#%+
 +%#=========#%+
 +%#=========#%+
 +%#=========#%+
