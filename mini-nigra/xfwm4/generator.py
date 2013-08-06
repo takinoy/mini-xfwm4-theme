@@ -184,32 +184,32 @@ chars = ["+", "@", "#", "=", "-"]
 dmap = [(".", "None")]
 close_active_map = {
     "." : "None",
-    "=" : "#3C3C3C",
-    "+" : "#E6E6E6",
-    "@" : "#3C3C3C",
-    "#" : "#E6E6E6",
+    "=" : "#000000 s active_color_2",
+    "+" : "#E6E6E6 s active_text_color",
+    "@" : "#000000 s active_color_2",
+    "#" : "#E6E6E6 s active_text_color",
 }
 
 cpmap = {
     "." : "None",
-    "=" : "#3C3C3C",
+    "=" : "#000000 s active_color_2",
 }
 close_prelight = close_active
 close_prelight_map = genmap(cpmap, chars, "#D92626", "#991B1B", "#991B1B", 1)
 cpdmap = {
     "." : "None",
-    "=" : "#3C3C3C",
-    "@" : "#3C3C3C",
-    "#" : "#E6E6E6",
+    "=" : "#000000 s active_color_2",
+    "@" : "#000000 s active_color_2",
+    "#" : "#E6E6E6 s active_text_color",
 }
 close_pressed = close_active
 close_pressed_map = genmap(cpdmap, chars, "#D92626", "#991B1B", "#991B1B", 1)
 close_inactive = close_active
 close_inactive_map = {
     "." : "None",
-    "=" : "#000000 s inactive_color_2",
+    "=" : "#000000 s active_color_2",
     "+" : "#505050 s inactive_text_color",
-    "@" : "#000000 s inactive_color_2",
+    "@" : "#000000 s active_color_2",
     "#" : "#505050 s inactive_text_color",
 }
 
@@ -234,7 +234,7 @@ hide_active_map = close_active_map
 hide_prelight = hide_active
 hide_prelight_map = {
     "." : "None",
-    "=" : "#3C3C3C",
+    "=" : "#000000 s active_color_2",
     "+" : "#000000 s active_color_1",
     "@" : "#000000",
     "#" : "#000000",
@@ -243,10 +243,10 @@ hide_prelight_map = {
 hide_pressed = hide_active
 hide_pressed_map = {
     "." : "None",
-    "=" : "#3C3C3C",
+    "=" : "#000000 s active_color_2",
     "+" : "#000000 s active_color_1",
-    "@" : "#3C3C3C",
-    "#" : "#E6E6E6",
+    "@" : "#000000 s active_color_2",
+    "#" : "#E6E6E6 s active_text_color",
 }
 
 hide_inactive = hide_active
@@ -428,61 +428,34 @@ stick_toggled_inactive = stick_toggled_active
 stick_toggled_inactive_map = menu_inactive_map
 
 active = '''
-..+++++++++++..
-.+%%%%%%%%%%%+.
-+%%%%%%%%%%%%%+
-+%%%%%%%%%%%%%+
-+%%%%%%%%%%%%%+
-+%%%%%%%%%%%%%+
-+%%%%%%%%%%%%%+
-+%%%%%%%%%%%%%+
-+%%%%%%%%%%%%%+
-+%%%%%%%%%%%%%+
-+%%%%%%%%%%%%%+
-+%%%%%%%%%%%%%+
-+%%%%%%%%%%%%%+
-+%%%%%%%%%%%%%+
-+%#         #%+
-+%###########%+
-+%%%%%%%%%%%%%+
-+%%%%%%%%%%%%%+
-.+++++++++++++. 
+..+++++++++..
+.+%%%%%%%%%+.
++%%%%%%%%%%%+
++%%%%%%%%%%%+
++%%%%%%%%%%%+
++%%%%%%%%%%%+
++%%%%%%%%%%%+
++%%%%%%%%%%%+
++%%%%%%%%%%%+
++%%%%%%%%%%%+
++%%%%%%%%%%%+
++%%%%%%%%%%%+
++%%%%%%%%%%%+
++%%%%%%%%%%%+
++%         %+
++%%%%%%%%%%%+
++%%%%%%%%%%%+
+.+++++++++++. 
 '''.strip()
 amap = {
     "=" : "#000000 s active_color_2",
     "+" : "#000000",
-    "%" : "#3C3C3C",
+    "%" : "#000000 s active_color_2",
     "#" : "#000000 s active_mid_2",
     "." : "None",
 }
-inactive = '''
-..+++++++++++..
-.+%%%%%%%%%%%+.
-+%###########%+
-+%#=========#%+
-+%#=========#%+
-+%#=========#%+
-+%#=========#%+
-+%#=========#%+
-+%#=========#%+
-+%#=========#%+
-+%#=========#%+
-+%#=========#%+
-+%#=========#%+
-+%#=========#%+
-+%#         #%+
-+%###########%+
-+%%%%%%%%%%%%%+
-+%%%%%%%%%%%%%+
-.+++++++++++++.
-'''.strip()
-imap = {
-    "=" : "#000000 s inactive_color_2",
-    "+" : "#000000 s inactive_shadow_2",
-    "%" : "#000000 s inactive_mid_2",
-    "#" : "#000000 s inactive_color_2",
-    "." : "None",
-}
+inactive = active
+imap = amap
 
 if __name__ == "__main__":
     build()

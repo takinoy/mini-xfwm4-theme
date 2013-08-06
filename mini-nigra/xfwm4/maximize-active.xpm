@@ -1,9 +1,9 @@
 /* XPM */
 static char * maximize_active = {
 "18 14 4 1", 
-"@	c #3C3C3C", 
-"+	c #E6E6E6", 
-"=	c #3C3C3C", 
+"@	c #000000 s active_color_2", 
+"+	c #E6E6E6 s active_text_color", 
+"=	c #000000 s active_color_2", 
 ".	c None", 
 "..................", 
 "..................", 

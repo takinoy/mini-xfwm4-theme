@@ -1,8 +1,8 @@
 /* XPM */
 static char * top_left_inactive = {
 "2 14 3 1", 
-"+	c #000000 s inactive_shadow_2", 
-"%	c #000000 s inactive_mid_2", 
+"+	c #000000", 
+"%	c #000000 s active_color_2", 
 ".	c None", 
 "..", 
 ".+", 

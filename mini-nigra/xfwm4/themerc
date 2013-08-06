@@ -1,4 +1,6 @@
 active_text_color=#E6E6E6
+inactive_text_color=#A1A1A1
+active_color_2=#3C3C3C
 
 button_offset=0
 button_spacing=0
