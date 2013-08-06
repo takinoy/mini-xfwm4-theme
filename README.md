@@ -1,9 +1,9 @@
-mini-xfwm4-theme version 1.1
+mini-xfwm4-theme version 1.2
 ----------------------------
 
 Author : Cédric Leporcq
 Released under the GPL license
-Date : February 28, 2013
+Date : August 06, 2013
 Sources : https://github.com/cedl38/mini-xfwm4-theme
 
 Very thin theme for Xfce to keep space for windows.
@@ -19,6 +19,9 @@ Arch users : "mini-xfwm4-theme" is available in AUR.
 
 LOG
 
+1.2
+ - change mini-nigra insensitive colors and fix borders.
+ 
 1.1
  - Slightly increase titlebar height of 1px to fix top sensitive border.
  - Adjust titlebar corner rounding for mini-nigra.
